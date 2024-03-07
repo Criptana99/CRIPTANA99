@@ -18,9 +18,6 @@ public class CCuenta {
     private double tipoInterés;
   
     
-    public CCuenta()
-    {
-    }
 
     /**
      *
