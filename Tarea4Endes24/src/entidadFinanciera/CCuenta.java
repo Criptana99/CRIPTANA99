@@ -5,20 +5,17 @@
 
 package entidadFinanciera;
 
-
+/**
+ *
+ * @author Acer
+ */
 public class CCuenta {
-
-    /**
-     * @author Criptana
-     *
-     */
+   
     private String nombre;
     private String cuenta;
     private double saldo;
     private double tipoInterés;
   
-    
-
     /**
      *
      * @param nom
@@ -26,8 +23,7 @@ public class CCuenta {
      * @param sal
      * @param tipo
      */
-  
-   public CCuenta(String nom, String cue, double sal, double tipo)
+    public CCuenta(String nom, String cue, double sal, double tipo)
     {
         nombre =nom;
         cuenta=cue;
@@ -53,6 +49,10 @@ public class CCuenta {
             throw new Exception(NO_SE_PUEDE_INGRESAR_UNA_CANTIDAD_NEGATIV);
         setSaldo(getSaldo() + cantidad);
     }
+
+    /**
+     *
+     */
     public static final String NO_SE_PUEDE_INGRESAR_UNA_CANTIDAD_NEGATIV = "No se puede ingresar una cantidad negativa";
 
     /**
@@ -127,7 +127,3 @@ public class CCuenta {
 
   
 }
-
-
-    
-   

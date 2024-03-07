@@ -8,9 +8,16 @@ package entidadFinanciera;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-
+/**
+ *
+ * @author Acer
+ */
 public class Main {
 
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         CCuenta objetoCuenta;
         double saldoActual;
@@ -22,7 +29,12 @@ public class Main {
       
     }
 
-   
+    /**
+     *
+     * @param c
+     * @param cantidad
+     * @param cantidadEsperada
+     */
     public static void probarIngresar(CCuenta c, int cantidad, int cantidadEsperada) {
         try {
             c.ingresar(cantidad);
@@ -32,6 +44,12 @@ public class Main {
         }
             }
     
+    /**
+     *
+     * @param c
+     * @param cantidad
+     * @param cantidadEsperada
+     */
     public static void probarRetirar(CCuenta c, int cantidad, int cantidadEsperada) {
         try {
             c.retirar(cantidad);
